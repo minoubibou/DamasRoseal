@@ -1,0 +1,244 @@
+/* style.css */
+body {/* Définit une liste de polices de caractères par ordre de préférence*/
+    font-family: helvetica, arial, sans-serif;/*Choix de polices, helvetica est le premier choix*/
+    margin: 4em;  /*Imposer la marge pour la page en mesure em*/
+    background-color: #FFFFFF; /*Couleur du fond de page*/
+ }
+ h1 { /*Styles de titres*/
+    color: #050505; /*Couleur bleu clair pour les titres h1*/
+    text-align: center; /*Les titres h1 sont centrés*/
+ }
+ 
+ /*Menu de navigation- page accueil*/
+ .menu a { /*Styles apportés sur les menus de navigation*/
+    text-decoration: none; /*Aucune décoration des éléments du menu*/
+    color:rgb(12, 12, 13) /*Couleur noire des éléments du menu*/
+ }
+ 
+ .menu a:hover { /*Styles apportés sur un lien du menu lorsqu'on le survole avec la souris*/
+    color: #fef7f7; /*Couleur blanche lors de ce déplacement du curseur sur les éléments du menu*/
+ }
+
+ .menu-list { /*Styles apportés sur le conteneur principal d'une liste de menu */
+    list-style-type: none;/*Supprimer les puces ou numeros du conteneur du menu*/
+    padding: 0; /*Supprimer la marge interieure du conteneur du menu*/
+    text-align: center; /*Centrer les élements de la liste menu au conteneur*/
+ }
+
+ .menu-item { /*Styles apportés sur des éléments de menus ou de listes horizontales*/
+    display:inline-block; /*Afficher les éléments de liste de menu horizontalement plutôt que verticalement*/
+    width: 20%; /*Largeur de 20% de la largeur du conteneur du menu*/
+    text-align: center; /*Centrer le texte du menu*/
+    border: 2px solid #748eae; /*Bordure continue de 2 pixels de couleur bleu du menu*/
+    padding: 20px; /*Espacement du bloc intérieure de 20 px*/
+ }
+
+ .menu-item:hover { /*Styles apportés sur les éléments de menu individuels lorsqu'un utilisateur survole ces éléments avec la souris*/
+    border: 2px solid #65dae7; /*Bordure  uniforme de 2 pixels et de couleur bleu clair*/
+    background-color: #65dae7; /*Fond du contenu est bleu clair*/
+ }
+ 
+ /*Styles apportés sur les éléments de l'audio, bouton activer le son et icon du speaker*/
+ .container {  
+   display: flex; /*Utilise Flexbox pour organiser les éléments à l'intérieur du conteneur*/
+   flex-direction: column; /*Aligne les éléments verticalement (en colonne) */
+   align-items: center; /*Centre les éléments horizontalement dans le conteneur*/
+   gap: 10px; /*Ajoute un espace de 10 pixels entre chaque élément à l'intérieur*/
+}
+
+#sound-control {  
+   position: absolute; /*Positionne l'élément par rapport à son parent le plus proche positionné ou à la fenêtre */
+   top: 20px; /*Place l'élément à 20 pixels du haut de la page*/
+   left: 20px; /*Place l'élément à 20 pixels du côté gauche */
+   display: flex; /*Utilise Flexbox pour organiser les éléments à l'intérieur*/
+   flex-direction: column; /*ligne les éléments verticalement*/
+   align-items: center; /*Centre les éléments horizontalement*/
+   gap: 5px; /*Ajoute un espace de 5 pixels entre chaque élément (ex. icône et bouton)*/
+}
+#toggle-sound {  
+   padding: 10px 16px; /* Ajoute un espace intérieur de 10px en haut/bas et 16px à gauche/droite pour agrandir le bouton*/
+   position: center; /*Positionne le bouton de manière centrer*/
+   font-size: 10px; /*Définit la taille du texte du bouton à 10 pixels*/
+   cursor: pointer; /*Change le curseur en forme de main au survol pour indiquer que le bouton est cliquable*/
+   border: none; /*Supprime la bordure du bouton*/
+   background-color: #c07b20; /* Couleur de fond  est marron/orangé pour le bouton*/
+   color: white; /*La couleur du texte est blanc*/
+   border-radius: 5px; /*Les coins du bouton sont arrondis avec un rayon de 5px*/
+   transition: background-color 0.2s ease-in-out; /*Ajoute une transition fluide sur la couleur de fond en 0.2s*/
+}
+
+#toggle-sound:hover {  
+   background-color: #0056b3; /* La couleur du bouton est bleu foncé lorsqu'on passe la souris dessus*/
+}
+
+#speaker {  
+   position: absolute; /*Positionne l'image du haut-parleur de manière absolue*/
+   top: 40px; /* Place l'image à 40 pixels du haut de la page ou de son parent positionné*/
+   left: 30px; /*Place l'image à 30 pixels du côté gauche*/
+   width: 40px; /*Réduit la largeur de l'image du haut-parleur à 40 pixels */
+   height: 40px; /*Assure que l’image garde une taille de 40 pixels de hauteur*/
+   cursor: pointer; /*Change le curseur en main lorsque l'utilisateur passe dessus, indiquant qu'il est cliquable*/
+   transition: transform 0.2s ease-in-out; /*Ajoute un effet de transition fluide lors de la transformation*/
+}
+
+#speaker:hover {  
+   transform: scale(1.1); /*Agrandit légèrement l’image (110% de sa taille initiale) lorsqu'on passe la souris dessus*/
+}
+#clock {
+   padding: 5px;
+   font-size: 1.2em;
+   text-align: center;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   background: #fff;
+   color: #333;
+   width: 100px;
+}
+.clock-container {
+   margin: 10px;
+}
+ /*Bloc de la page contactez-nous*/
+ .question { /*Styles apportés sur le bloc personnel*/
+    background-color: #5399c1; /*La couleur du fond est bleu*/
+    border-radius: 15px;/*les coins de la bordure sont arrondis avec un rayon de 15 pixels*/
+    border : 3px solid #fff; /*Bordure continue de 3 pixels de couleur blanche*/
+    text-align: center; /*Centrer le texte au bloc*/
+    margin-bottom: 5px; /*Espacement de 5 pixels sous chaque bloc personnel*/
+ }
+
+ .horizontal-block { 
+   display: flex; /*Utilisation de flexbox pour aligner les blocs*/
+   justify-content: center; /*Centre les éléments horizontalement*/
+   align-items: stretch; /* Étire les éléments pour qu'ils aient la même hauteur */
+   gap: 10px; /*Espacement entre les blocs*/
+   padding: 2px; /*aucun espacement en dessous des blocs*/
+}
+
+.localisation { 
+   background-color: #fff; /*La couleur du fond des deux blocs est blanc*/
+   border-radius: 15px; /*les coins des deux blocs sont arrondis d'un rayon de 15 pixels*/
+   border: 3px solid #aaa4a451; /*Bordure continue de 3 pixels de couleur grise*/
+   text-align: center;
+   width: 45%; /* Augmente la largeur pour mieux occuper l'espace */
+   height: auto; /* Suppression de la hauteur fixe pour éviter un déséquilibre */
+   display: flex; /* Ajout de flexbox */
+   flex-direction: column; /* Pour aligner le contenu verticalement */
+   justify-content: space-between; /* Répartit l'espace interne */
+   padding: 30px;/*Espacement sur la largeur des blocs*/
+}
+ 
+ #carte { /*Styles apportés pour l'insertion de la carte sur la page contactez-nous*/
+    background-color: #fff; /*Couleur de fond est blanc*/
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);/*Ombre du bloc est de couleur noire*/
+    
+ }
+ /*Insertion d'un formulaire de contact a la page contactez-nous*/
+ .contact-section {
+/*La section contact*/
+    text-align: center; /*Centre le contenu du formulaire*/
+    padding: 40px 20px; /*Ajoute un espacement autour du formulaire*/
+    background-color: #fff; /*Couleur de fond est blanc*/
+}
+.contact-section h2 {
+    color: #065786; /*La couleur du titre de la section est bleu*/
+}
+.contact-container {
+   flex-grow: 1; /*Permet à la carte de prendre toute la hauteur disponible*/
+   width: 90%; /*Largeur de 90% du conteneur contact*/
+   height: 80%; /*hauteur de 80% du conteneur contact*/
+   max-height: 320px; /* Définit une hauteur maximale */
+   border-radius: 10px; /*Arrondit les coins du conteneur contact */
+}
+.contact-form {
+   padding: 30px; /*Espacement sur la largeur du formulaire de contact*/
+   background: #f9f9f9;/* Couleur du fond du formulaire est blanche*/
+   border-radius: 10px;/*Arrondit les coins du formulaire contact */
+   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1); /*Ombre du formulaire de contact est de couleur noire*/
+}
+.contact-form label {
+    font-weight: bold; /*Rend les étiquettes plus visibles*/
+    margin-top: 10px; /*Ajoute un espacement entre les champs*/
+    text-align: left; /*Texte aligner a gauche*/
+}
+.contact-form input, .contact-form textarea {
+   flex-grow: 1; /* Permet aux champs de remplir l’espace disponible */
+   margin-bottom: 10px; /* Ajoute un petit espacement */
+}
+.contact-form button {
+   width: 100%; /* Assure que le bouton occupe toute la largeur */
+   padding: 15px; /* Augmente l’espacement pour mieux remplir l’espace */
+   border-radius: 10px; /*Arrondit les coins du bouton envoyer*/
+}
+.contact-form button:hover {
+    background-color: #c79145; /*Change la couleur au survol en brun-orangé*/
+    border-radius: 10px; /*Arrondit les coins du bouton envoyer en survol*/
+}
+.contact-form, .map-container {
+   flex: 1; /*Assure que les deux blocs prennent le même espace*/
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   height: 100%; /*Ajuste la hauteur*/
+}
+.map-container iframe {
+   flex-grow: 1; /*Permet à la carte de prendre toute la hauteur disponible */
+   width: 100%; /*Assure que la carte occupe toute la largeur*/
+   height: 100%;/*Assure que la carte occupe toute la hauteur*/
+   min-height: 300px; /* Définit une hauteur minimale */
+   border-radius: 10px;/*Arrondit les coins de la carte*/
+}
+/*Dernier bloc horizontal de la page contactez-nous*/
+ .email-link {
+    display: inline-block; /*Permet de modifier la taille de l’élément*/
+    padding: 10px 15px; /*Ajoute un espacement interne*/
+    background-color: #eef0f3; /*Couleur de fond  est blanc*/
+    color: rgb(9, 7, 7); /*Couleur du texte*/
+    text-decoration: none; /*Supprime le soulignement du lien*/
+    border-radius: 10px; /*Arrondit les coins du bouton*/
+}
+.email-link:hover {
+    background-color: #c79145; /*Change la couleur au survol en brun-orangé*/
+}
+ 
+ /*Bloc de la page Decouvrez-nous*/
+ .produits {
+    background-color: #fff; /*La couleur du fond est blanche*/
+    border-radius: 15px;/*les coins de la bordure sont arrondis avec un rayon de 15 pixels*/
+    border: 5px solid #d8ce37; /*Bordure continue de 3 pixels et de couleur jaune*/
+    text-align: center; /*Centrer le texte au bloc*/
+    display: inline-table;/*Chaque tableau est affiché côte à côte sur la même ligne*/
+    width: 30%; /*Largeur de l'élément est de 30% de la largeur de son conteneur*/
+    height: 300px; /*Hauteur de l'élément est de 300 pixels*/
+    margin: 0; /*Les marges extérieures sont supprimées*/
+ }
+
+ .localisation .description ul{ /*Styles apportés sur tous les éléments de la liste non ordonnee <ul> à l'intérieur de ".cv-block"*/
+    display: inline-block; /*Afficher les éléments de liste de menu horizontalement plutôt que verticalement*/
+    text-align: left;/*Listes et leurs contenus sont affichés a gauche*/
+    padding-left: 0;/*Aucun espace a gauche des listes*/
+ }
+ .icon { /*Styles apportés sur tous les icones*/
+   width: 100px; /*Largeur de l'icone est de 100 pixels*/
+   height: 90px; /*Hauteur de l'icone est de 90 pixels*/
+}
+
+ /*Application avec Javascript*/
+ #clock
+ /*Cet élément affichera une horloge sur la pag en communication avec la page Script.js*/
+ {
+    text-align: center; /*Centre le texte de l'horloge*/
+    position: absolute; /*Positionnement absolu par rapport à son conteneur parent*/
+    top: 10px; /*Distance de 10px depuis le haut de la page ou du parent*/
+    right: 10px; /*Distance de 10px depuis le bord droit*/
+    background-color: #fff; /*Fond de l'horloge est de couleur blanche*/
+    padding: 10px; /*Ajoute un espace intérieur de 10px*/
+    border: 2px solid #065786; /*Bordure continue de 2 pixels et de couleur bleu fonce*/
+    border-radius: 5px; /*les coins de la bordure sont arrondis avec un rayon de 5 pixels*/
+    font-family: Arial, sans-serif; /*Définit la police du texte*/
+    font-size: 18px; /*Définit une taille de texte de 18 pixels*/
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2); /* Ajoute une ombre légère pour un effet de relief */
+  }
+  
+ 
+ 
+ 

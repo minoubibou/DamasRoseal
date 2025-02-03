@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!--- Déclaration du type de document HTML5 -->
+<html lang="fr">
+<!--Permet au navigateur de se préparer pour lire du code HTML en francais-->
+<head>
+<!--Précise les informations d'entête utilisées-->
+  <meta charset="UTF-8">
+<!--Permet d’avoir une information sur l’encodage des caractères utilisé-->
+  <link rel="stylesheet" href="style.css">
+<!-- Liaison avec la feuille de style CSS externe- Placée à la fin du head pour optimiser le chargement de la page -->
+ <title>Contactez-nous</title>
+ <!-- Titre de la page -->
+</head>
+<body>
+<!-- la balise body Contient le corps du document html, c'est à dire toutes les informations visibles par l'internaute-->
+
+   <div class="h1">
+          <h1>Contactez-nous</h1>
+      </div>
+    <!-- Titre principal qui repond a la page CSS-->
+ 
+
+<div class="question">
+    <!-- Section d'introduction qui repond a la page CSS -->
+    <p>Vous avez une question ?</p>
+    <!-- Zone de texte -->
+    <p>N'hésitez pas à nous contacter en utilisant le formulaire ci-dessous ou en nous rendant visite.</p>
+    <!-- Zone de texte -->
+</div>
+ 
+<!-- Bloc horizontal de contact et localisation -->
+<div class="horizontal-block">
+<!-- Conteneur du formulaire de contact -->
+    <div class="localisation">
+<!-- Conteneur du formulaire de contact -->
+        <div class="contact-container">
+            <form class="contact-form">
+                 <!-- Formulaire de contact -->
+                <label for="name">Nom :</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message :</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                <button type="submit">Envoyer</button>
+                <!-- Bouton envoyer -->
+            </form>
+            <!-- Fin du formulaire de contact -->
+         </div>
+ </div>
+ 
+ 
+ <div class="localisation" id="carte">
+        <!-- Conteneur de la carte -->
+        <div class="map-container">
+            <h2>Notre localisation</h2>
+            <!-- Titre qui repond a la page CSS-->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2530.426871247123!2d3.0746712!3d50.637762900000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c2d52cede0c97b%3A0x9c58760e6deafc0a!2sBoutique%20Aroma%20Zone%20Euralille!5e0!3m2!1sfr!2sfr!4v1738172548791!5m2!1sfr!2sfr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+             <!-- Intégration de Google Maps -->
+        </div>
+    </div>
+</div>
+
+ <div class="question">
+    <!-- Ajout d'informations de contact -->
+        <p><strong>Adresse :</strong> Westfield Euralille, 100 Av. Willy Brandt, 59777 Lille</p>
+        <!-- Zone de texte avec passage en caractere gras -->
+        <p><strong>Téléphone :</strong> +33 04 13 35 50 00</p>
+        <!-- Zone de texte avec passage en caractere gras -->
+        <a href="manon.de-taevernier.etu@univ-lille.fr" class="email-link">Nous écrire</a></p>
+        <!-- Zone de texte avec insertion d'un lien URL et relation page CSS-->
+        <p><strong>Horaires :</strong> Lundi - Vendredi : 9h - 18h</p>
+        <!-- Zone de texte avec passage en caracteregras -->
+ 
+ </div>
+</body>
+<!-- Fin du contenu visible -->
+</html>
+<!-- Fin du document HTML -->
+ 
+ 
+ 
+ 
+ 

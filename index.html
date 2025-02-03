@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--- Déclaration du type de document HTML5 -->
+<html lang="fr">
+  <!--Permet au navigateur de se préparer pour lire du code HTML en francais-->
+<head>
+  <!--Précise les informations d'entête utilisées-->
+
+    <meta charset="UTF-8">
+    <!--Permet d’avoir une information sur l’encodage des caractères utilisé-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Meta viewport essentielle pour le responsive design -->
+    <title>DAMAS ROSEAL - Cosmétiques naturels</title>
+    <!--Représente le titre de la page web-->
+  
+    <link rel="stylesheet" href="style.css">
+     <!-- Liaison avec la feuille de style CSS externe- Placée à la fin du head pour optimiser le chargement de la page -->
+</head>
+<body>
+  <!-- la balise body Contient le corps du document html, c'est à dire toutes les informations visibles par l'internaute-->
+<!--Formulaire contenant l'horloge utilisé pour le référencement JavaScript -->
+<body onload="UpdateClock()" onunload="KillClock()">
+  <form name="theClock">
+    <input id="clock" type=text name="theTime">
+  </form>
+
+    <!-- Navigation principale -->
+    <nav class="menu">
+      <!-- Liste non ordonnée pour la structure du menu -->
+        <ul class="menu-list">
+          <!-- Éléments de menu avecliens inseres -->
+            <li class="menu-item"><a href="decouvreznosproduits.html">Découvrez nos produits</a></li>
+            <!-- Lien vers la page existante -->
+            <li class="menu-item"><a href="rencontreznotreequipe.html">Rencontrez notre équipe</a></li>
+            <!-- Lien vers la page existante -->
+            <li class="menu-item"><a href="nospointsdevente.html">Nos points de vente</a></li>
+            <!-- Lien vers la page existante -->
+            <li class="menu-item"><a href="contacteznous.html">Contactez-nous</a></li>
+            <!-- Lien vers la page existante -->
+        </ul>
+    </nav>
+
+    <img src="pageprincipaleweb.jpg" alt="Page principale Damas Roseal">
+<!-- Image principale de la page -->
+ 
+<!-- Logo du speaker -->
+<div id="sound-control">
+  <img id="speaker" src="icon.png" alt="Haut-parleur">
+  <!-- Insertion de l'icon speaker -->
+  <button id="toggle-sound">Activer le son</button>
+  <!-- Renvoi au bouton activer le son avec la page CSS -->
+  <audio id="bee-sound" loop>
+      <source src="abeilles.mp3" type="audio/mpeg">
+      Ton navigateur ne supporte pas l'audio.
+        <!-- Insertion de l'audio -->
+  </audio>
+</div>
+    
+<!-- Bonne pratique : déplacement du script JavaScript à la fin du body -->
+  <script src="Script.js"></script>
+    <!-- Initialiser l'horloge au demarrage -->
+</body>
+<!-- Fin du contenu visible -->
+</html>
+<!-- Fin du document HTML -->
